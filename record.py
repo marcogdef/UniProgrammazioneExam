@@ -1,7 +1,7 @@
 def main():
 
     #SCRIVO (WRITE)
-    numRec = int(input('quanti record de dipendenti' + 'desideri creare? '))
+    numRec = int(input('quanti record dei dipendenti ' + 'desideri creare? '))
 
     empFile = open('employees.txt', 'w')
 
@@ -32,8 +32,10 @@ def main():
         id = id.rstrip('\n')
         reparto = reparto.rstrip('\n')
 
-        name = empFile.readline()
+        name = empFile.readline()   
+        
 
     empFile.close()
 
 main()
+
