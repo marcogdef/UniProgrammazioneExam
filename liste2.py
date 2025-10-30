@@ -66,7 +66,7 @@ print('')
 
 import random
 names = ['cazzi', 'stracazzi', 'ultracazzi']
-winner = random.choice(names) #choice restituisce uno o piu elementi a caso nella lista 
+winner = random.choice(names) #choice restituisce un elemento a caso nella lista 
 print(winner)
 
 #choices
@@ -148,14 +148,14 @@ cities = ['Newyork', 'Madrid', 'Atlanta']
 
 outfile = open('cities.txt', 'w')
 
-outfile.writelines(cities) #non aggiunge \n automaticamente
+outfile.writelines(cities) #non aggiunge \n automaticamente ('newyorkmadridatlanta')
 
 outfile.close()
 
 #scritture di liste su file con ciclo for
 outfile = open('cities.txt', 'w')
 for item in cities:
-    outfile.write(item +'\n') #con \n le città vengono scritte su caratteri di nuove righe
+    outfile.write(item +'\n') #con write 1un valore alla volta e con \n le città vengono scritte su caratteri di nuove righe
 
 outfile.close()
 
@@ -169,8 +169,8 @@ print('')
 
 infile = open('cities.txt', 'r')
 
-cities = infile.readlines() # Legge il contenuto del file e lo memorizza in una lista.
-
+cities = infile.readlines() # ''''readline(s) Legge il contenuto del file e lo memorizza in una lista. != da read o readline che leggono il file come stringhe
+                            # readline senza s leggerebbere solo la prima riga ovvero una sola stringa
 infile.close() 
 
 for index in range(len(cities)):

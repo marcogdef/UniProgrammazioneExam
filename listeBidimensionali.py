@@ -1,0 +1,8 @@
+#LISTE BIDIMENSIONALI
+#Liste composte da righe e colonne
+
+values = [
+    [1,2,3],
+    [10,20,30],
+    [100,200,300]
+]
