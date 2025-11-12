@@ -49,7 +49,7 @@ print(key2,value2)
 
 
 #metodo values
-for val in phonebook.values(): #restituisce tutti i valori del dizionario
+for val in phonebook.values(): #restituisce tutti i valori del dizionario 
     print(val)
 
 

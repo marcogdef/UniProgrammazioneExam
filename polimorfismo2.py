@@ -12,9 +12,11 @@ cat = polimorfismo.Cat() #creiamo l'oggetto della classe cat
 cat.show_species()
 cat.make_sound() 
 
+print('')
 
 
-#funzione polimorfistica (senza nessun errore alle sue chiamate)
+
+#funzione polimorfistica (senza nessun errore alle sue chiamate)/ si blocca se si inserisce un valore diverso da mammal e le sue sottoclassi
 #def show_mammal_info(creature): #questa funzione non fa riferimento ne a mammal ne a dog ne a cat, infatti puo puntare a tutti e 3
     #creature.show_species()
     #creature.make_sound()

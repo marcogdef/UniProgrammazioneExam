@@ -16,7 +16,7 @@ class Coin:
     
 #istanza o oggetto della classe coin
 def main():
-    mycoin = Coin() #con questa dicitura creiamo l'oggetto mycoin e viene gia eseguito il metodo init che inizializza il parametro self con 'testa'
+    mycoin = Coin() #con questa dicitura creiamo l'oggetto mycoin e viene gia eseguito il metodo init che inizializza il parametro self ovvero l'oggetto con 'testa'
 
     print('La faccia visibile è: ', mycoin.get_sideup()) #get_sideup è chiamato sull'oggetto mycoin e restituisce 'Testa', il parametro self fa automaticamente riferimento all'ogg mycoin
     print('Sto lanciando la moneta...')
